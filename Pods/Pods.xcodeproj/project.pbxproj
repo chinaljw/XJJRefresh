@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		121DDD4530A25A348575944F /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D90500915542B9B7E64C0 /* Pods-dummy.m */; };
+		2C51F05776862EE913E3D333 /* UIScrollView+ContentOffsetObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = CB04FCACB69350054429F41D /* UIScrollView+ContentOffsetObserver.h */; };
+		2D44799205D04BC6FA1D312B /* UIScrollView+ContentOffsetObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 1736109C14D3272FBB288606 /* UIScrollView+ContentOffsetObserver.m */; };
+		383FB467139091AF16A28F07 /* UIScrollViewScrollInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 64A71CAF5666B920A63693A5 /* UIScrollViewScrollInfo.h */; };
+		5C589E84FB79C422025BA99D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F775472CF6005EF79F06789 /* Foundation.framework */; };
+		6070F8D04987A4638692649F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F775472CF6005EF79F06789 /* Foundation.framework */; };
+		64C94FB839E1DFFFEF608214 /* UIScrollViewScrollInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BD5928CFA31AA846B70DB9 /* UIScrollViewScrollInfo.m */; };
+		67EF2297D1E1D17373DE232A /* UIScrollViewContentOffsetObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 41D9611C07839920242FB25A /* UIScrollViewContentOffsetObserver.h */; };
+		83593172F27DE23E98A30A90 /* UIScrollViewContentOffsetObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9376080E5063578411942C29 /* UIScrollViewContentOffsetObserver.m */; };
+		D8EE262DABD3EA68DA3DE5CF /* Pods-XJJScrollViewObserver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA706946420A05BC29D06B1 /* Pods-XJJScrollViewObserver-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		284028BDBDAFD302366127C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA500BDE4D420756CB767CB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FED12A0F06E47C227F47C5D4;
+			remoteInfo = "Pods-XJJScrollViewObserver";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1736109C14D3272FBB288606 /* UIScrollView+ContentOffsetObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+ContentOffsetObserver.m"; path = "XJJScrollViewObserver/UIScrollView+ContentOffsetObserver.m"; sourceTree = "<group>"; };
+		1E31BF04E720F523CE315BE3 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		1F775472CF6005EF79F06789 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		41D9611C07839920242FB25A /* UIScrollViewContentOffsetObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIScrollViewContentOffsetObserver.h; path = XJJScrollViewObserver/UIScrollViewContentOffsetObserver.h; sourceTree = "<group>"; };
+		45BD5928CFA31AA846B70DB9 /* UIScrollViewScrollInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIScrollViewScrollInfo.m; path = XJJScrollViewObserver/UIScrollViewScrollInfo.m; sourceTree = "<group>"; };
+		47A13933A3F589D2B3F3AB60 /* Pods-XJJScrollViewObserver-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XJJScrollViewObserver-prefix.pch"; sourceTree = "<group>"; };
+		4DE00B9F172D4BA5FF9CF56E /* libPods-XJJScrollViewObserver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XJJScrollViewObserver.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53E990AA4ABFE50F4A343FA0 /* Pods-XJJScrollViewObserver-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XJJScrollViewObserver-Private.xcconfig"; sourceTree = "<group>"; };
+		5D68126ADF57489FA21B54FF /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5E3D90500915542B9B7E64C0 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		64A71CAF5666B920A63693A5 /* UIScrollViewScrollInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIScrollViewScrollInfo.h; path = XJJScrollViewObserver/UIScrollViewScrollInfo.h; sourceTree = "<group>"; };
+		766F466F5EF4AD20AB8F7F9F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		80DB6553046CDDFC32A4A295 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		8374F58BFE1EEFC852AAF0C4 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		843E973F48BBDC118CB34147 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9376080E5063578411942C29 /* UIScrollViewContentOffsetObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIScrollViewContentOffsetObserver.m; path = XJJScrollViewObserver/UIScrollViewContentOffsetObserver.m; sourceTree = "<group>"; };
+		992347473E8A2DFE46C46F35 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		BCA706946420A05BC29D06B1 /* Pods-XJJScrollViewObserver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XJJScrollViewObserver-dummy.m"; sourceTree = "<group>"; };
+		C9D50D134695B85F7CB52435 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB04FCACB69350054429F41D /* UIScrollView+ContentOffsetObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+ContentOffsetObserver.h"; path = "XJJScrollViewObserver/UIScrollView+ContentOffsetObserver.h"; sourceTree = "<group>"; };
+		CF128317FE483915F728E1E8 /* Pods-XJJScrollViewObserver.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XJJScrollViewObserver.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68899E4CBC38731D2AD2F948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C589E84FB79C422025BA99D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89669651DDC3C113AC38F62C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6070F8D04987A4638692649F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A4F27B72B537821CE167AC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA61889C9DF22934CFD3EF7E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37180596E4B52BC4677B07F7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F43A83A05274D7EC5357152 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5DAB566D4775EBF0B6ABA596 /* XJJScrollViewObserver */ = {
+			isa = PBXGroup;
+			children = (
+				CB04FCACB69350054429F41D /* UIScrollView+ContentOffsetObserver.h */,
+				1736109C14D3272FBB288606 /* UIScrollView+ContentOffsetObserver.m */,
+				41D9611C07839920242FB25A /* UIScrollViewContentOffsetObserver.h */,
+				9376080E5063578411942C29 /* UIScrollViewContentOffsetObserver.m */,
+				64A71CAF5666B920A63693A5 /* UIScrollViewScrollInfo.h */,
+				45BD5928CFA31AA846B70DB9 /* UIScrollViewScrollInfo.m */,
+				DC80B5D21ABA1BCC2BF10508 /* Support Files */,
+			);
+			path = XJJScrollViewObserver;
+			sourceTree = "<group>";
+		};
+		5F43A83A05274D7EC5357152 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				843E973F48BBDC118CB34147 /* Pods-acknowledgements.markdown */,
+				8374F58BFE1EEFC852AAF0C4 /* Pods-acknowledgements.plist */,
+				5E3D90500915542B9B7E64C0 /* Pods-dummy.m */,
+				1E31BF04E720F523CE315BE3 /* Pods-environment.h */,
+				992347473E8A2DFE46C46F35 /* Pods-resources.sh */,
+				80DB6553046CDDFC32A4A295 /* Pods.debug.xcconfig */,
+				766F466F5EF4AD20AB8F7F9F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		78B379F03E3118C1E600F88B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9D50D134695B85F7CB52435 /* libPods.a */,
+				4DE00B9F172D4BA5FF9CF56E /* libPods-XJJScrollViewObserver.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DDF3F07D60E1E5C0D452B22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DAB566D4775EBF0B6ABA596 /* XJJScrollViewObserver */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA61889C9DF22934CFD3EF7E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1F775472CF6005EF79F06789 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DC80B5D21ABA1BCC2BF10508 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF128317FE483915F728E1E8 /* Pods-XJJScrollViewObserver.xcconfig */,
+				53E990AA4ABFE50F4A343FA0 /* Pods-XJJScrollViewObserver-Private.xcconfig */,
+				BCA706946420A05BC29D06B1 /* Pods-XJJScrollViewObserver-dummy.m */,
+				47A13933A3F589D2B3F3AB60 /* Pods-XJJScrollViewObserver-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-XJJScrollViewObserver";
+			sourceTree = "<group>";
+		};
+		F8480B20FD18C1A86502C2A8 = {
+			isa = PBXGroup;
+			children = (
+				5D68126ADF57489FA21B54FF /* Podfile */,
+				0A4F27B72B537821CE167AC6 /* Frameworks */,
+				7DDF3F07D60E1E5C0D452B22 /* Pods */,
+				78B379F03E3118C1E600F88B /* Products */,
+				37180596E4B52BC4677B07F7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E68FA72C9BF30C62557F99A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C51F05776862EE913E3D333 /* UIScrollView+ContentOffsetObserver.h in Headers */,
+				67EF2297D1E1D17373DE232A /* UIScrollViewContentOffsetObserver.h in Headers */,
+				383FB467139091AF16A28F07 /* UIScrollViewScrollInfo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7C9405446F777CA25B4EE56F /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FBB3542FED1DCCDC22DC4BA /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				E864EF73FCEF39D7CCEC8ADE /* Sources */,
+				89669651DDC3C113AC38F62C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				467548B48A25F44880597E34 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = C9D50D134695B85F7CB52435 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FED12A0F06E47C227F47C5D4 /* Pods-XJJScrollViewObserver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 454F00BD4D8EBEC42D143B5E /* Build configuration list for PBXNativeTarget "Pods-XJJScrollViewObserver" */;
+			buildPhases = (
+				C232E2F699C38296FB0316D5 /* Sources */,
+				68899E4CBC38731D2AD2F948 /* Frameworks */,
+				E68FA72C9BF30C62557F99A6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-XJJScrollViewObserver";
+			productName = "Pods-XJJScrollViewObserver";
+			productReference = 4DE00B9F172D4BA5FF9CF56E /* libPods-XJJScrollViewObserver.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA500BDE4D420756CB767CB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 8444C6CC78A1DD458D1928FF /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F8480B20FD18C1A86502C2A8;
+			productRefGroup = 78B379F03E3118C1E600F88B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C9405446F777CA25B4EE56F /* Pods */,
+				FED12A0F06E47C227F47C5D4 /* Pods-XJJScrollViewObserver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C232E2F699C38296FB0316D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EE262DABD3EA68DA3DE5CF /* Pods-XJJScrollViewObserver-dummy.m in Sources */,
+				2D44799205D04BC6FA1D312B /* UIScrollView+ContentOffsetObserver.m in Sources */,
+				83593172F27DE23E98A30A90 /* UIScrollViewContentOffsetObserver.m in Sources */,
+				64C94FB839E1DFFFEF608214 /* UIScrollViewScrollInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E864EF73FCEF39D7CCEC8ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				121DDD4530A25A348575944F /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		467548B48A25F44880597E34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-XJJScrollViewObserver";
+			target = FED12A0F06E47C227F47C5D4 /* Pods-XJJScrollViewObserver */;
+			targetProxy = 284028BDBDAFD302366127C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		48F6BCF29B792AC47DCA3133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53E990AA4ABFE50F4A343FA0 /* Pods-XJJScrollViewObserver-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-XJJScrollViewObserver/Pods-XJJScrollViewObserver-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8FD14876F3AF372BAB15BF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 766F466F5EF4AD20AB8F7F9F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BAAF11FA6A45B844DEF6323F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C79ACFC75A571ADCCBD4A66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D80747B244198F84F5978139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80DB6553046CDDFC32A4A295 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E0CDD36E5F10198A92F24F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53E990AA4ABFE50F4A343FA0 /* Pods-XJJScrollViewObserver-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-XJJScrollViewObserver/Pods-XJJScrollViewObserver-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		454F00BD4D8EBEC42D143B5E /* Build configuration list for PBXNativeTarget "Pods-XJJScrollViewObserver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0CDD36E5F10198A92F24F34 /* Debug */,
+				48F6BCF29B792AC47DCA3133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FBB3542FED1DCCDC22DC4BA /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80747B244198F84F5978139 /* Debug */,
+				8FD14876F3AF372BAB15BF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8444C6CC78A1DD458D1928FF /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C79ACFC75A571ADCCBD4A66F /* Debug */,
+				BAAF11FA6A45B844DEF6323F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA500BDE4D420756CB767CB9 /* Project object */;
+}

@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E437192A1BFD57C100AEC37A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E43719291BFD57C100AEC37A /* main.m */; };
+		E437192D1BFD57C100AEC37A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E437192C1BFD57C100AEC37A /* AppDelegate.m */; };
+		E43719301BFD57C100AEC37A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E437192F1BFD57C100AEC37A /* ViewController.m */; };
+		E43719331BFD57C100AEC37A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43719311BFD57C100AEC37A /* Main.storyboard */; };
+		E43719351BFD57C100AEC37A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43719341BFD57C100AEC37A /* Assets.xcassets */; };
+		E43719381BFD57C100AEC37A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43719361BFD57C100AEC37A /* LaunchScreen.storyboard */; };
+		E43719431BFD57C100AEC37A /* XJJRefreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E43719421BFD57C100AEC37A /* XJJRefreshTests.m */; };
+		E437194E1BFD57C200AEC37A /* XJJRefreshUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E437194D1BFD57C200AEC37A /* XJJRefreshUITests.m */; };
+		E43719691BFD58D000AEC37A /* XJJRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E43719681BFD58D000AEC37A /* XJJRefreshControl.m */; };
+		E437196C1BFD5BAB00AEC37A /* UIScrollView+XJJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = E437196B1BFD5BAB00AEC37A /* UIScrollView+XJJRefresh.m */; };
+		E437196F1BFD730B00AEC37A /* TestRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = E437196E1BFD730B00AEC37A /* TestRefresh.m */; };
+		E43719841BFDAC9400AEC37A /* LJWZoomingHeaderControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E43719791BFDAC9400AEC37A /* LJWZoomingHeaderControl.m */; };
+		E43719851BFDAC9400AEC37A /* LJWZoomingHeaderDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = E437197B1BFDAC9400AEC37A /* LJWZoomingHeaderDefine.m */; };
+		E43719861BFDAC9400AEC37A /* UIScrollView+LJWZoomingHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E437197E1BFDAC9400AEC37A /* UIScrollView+LJWZoomingHeader.m */; };
+		E43719871BFDAC9400AEC37A /* UIView+BelongController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43719801BFDAC9400AEC37A /* UIView+BelongController.m */; };
+		E437198A1BFDAD3200AEC37A /* TestZoomingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E43719891BFDAD3200AEC37A /* TestZoomingHeaderView.m */; };
+		E4877F301BFEAF1A0052AFBB /* XJJHolyCrazyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E4877F2F1BFEAF1A0052AFBB /* XJJHolyCrazyHeader.m */; };
+		F293F2C3E7BE1ADA83019312 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECC9FCBFC11C5744C59E94A /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E437193F1BFD57C100AEC37A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E437191D1BFD57C100AEC37A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E43719241BFD57C100AEC37A;
+			remoteInfo = XJJRefresh;
+		};
+		E437194A1BFD57C200AEC37A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E437191D1BFD57C100AEC37A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E43719241BFD57C100AEC37A;
+			remoteInfo = XJJRefresh;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D8F3FDA17758DD4A024E74E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3ECC9FCBFC11C5744C59E94A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43719251BFD57C100AEC37A /* XJJRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XJJRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43719291BFD57C100AEC37A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E437192B1BFD57C100AEC37A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E437192C1BFD57C100AEC37A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E437192E1BFD57C100AEC37A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E437192F1BFD57C100AEC37A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E43719321BFD57C100AEC37A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E43719341BFD57C100AEC37A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E43719371BFD57C100AEC37A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E43719391BFD57C100AEC37A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E437193E1BFD57C100AEC37A /* XJJRefreshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XJJRefreshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43719421BFD57C100AEC37A /* XJJRefreshTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJJRefreshTests.m; sourceTree = "<group>"; };
+		E43719441BFD57C200AEC37A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43719491BFD57C200AEC37A /* XJJRefreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XJJRefreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E437194D1BFD57C200AEC37A /* XJJRefreshUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XJJRefreshUITests.m; sourceTree = "<group>"; };
+		E437194F1BFD57C200AEC37A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43719661BFD581E00AEC37A /* XJJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJJRefreshHeader.h; sourceTree = "<group>"; };
+		E43719671BFD58D000AEC37A /* XJJRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJJRefreshControl.h; sourceTree = "<group>"; };
+		E43719681BFD58D000AEC37A /* XJJRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJJRefreshControl.m; sourceTree = "<group>"; };
+		E437196A1BFD5BAB00AEC37A /* UIScrollView+XJJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+XJJRefresh.h"; sourceTree = "<group>"; };
+		E437196B1BFD5BAB00AEC37A /* UIScrollView+XJJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+XJJRefresh.m"; sourceTree = "<group>"; };
+		E437196D1BFD730B00AEC37A /* TestRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRefresh.h; sourceTree = "<group>"; };
+		E437196E1BFD730B00AEC37A /* TestRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRefresh.m; sourceTree = "<group>"; };
+		E43719781BFDAC9400AEC37A /* LJWZoomingHeaderControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWZoomingHeaderControl.h; sourceTree = "<group>"; };
+		E43719791BFDAC9400AEC37A /* LJWZoomingHeaderControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWZoomingHeaderControl.m; sourceTree = "<group>"; };
+		E437197A1BFDAC9400AEC37A /* LJWZoomingHeaderDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWZoomingHeaderDefine.h; sourceTree = "<group>"; };
+		E437197B1BFDAC9400AEC37A /* LJWZoomingHeaderDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJWZoomingHeaderDefine.m; sourceTree = "<group>"; };
+		E437197C1BFDAC9400AEC37A /* LJWZoomingHeaderViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJWZoomingHeaderViewProtocol.h; sourceTree = "<group>"; };
+		E437197D1BFDAC9400AEC37A /* UIScrollView+LJWZoomingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LJWZoomingHeader.h"; sourceTree = "<group>"; };
+		E437197E1BFDAC9400AEC37A /* UIScrollView+LJWZoomingHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LJWZoomingHeader.m"; sourceTree = "<group>"; };
+		E437197F1BFDAC9400AEC37A /* UIView+BelongController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BelongController.h"; sourceTree = "<group>"; };
+		E43719801BFDAC9400AEC37A /* UIView+BelongController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BelongController.m"; sourceTree = "<group>"; };
+		E43719881BFDAD3200AEC37A /* TestZoomingHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestZoomingHeaderView.h; sourceTree = "<group>"; };
+		E43719891BFDAD3200AEC37A /* TestZoomingHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestZoomingHeaderView.m; sourceTree = "<group>"; };
+		E4877F2E1BFEAF1A0052AFBB /* XJJHolyCrazyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJJHolyCrazyHeader.h; sourceTree = "<group>"; };
+		E4877F2F1BFEAF1A0052AFBB /* XJJHolyCrazyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJJHolyCrazyHeader.m; sourceTree = "<group>"; };
+		E92EB2691EA9A5F7A0F090C2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E43719221BFD57C100AEC37A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F293F2C3E7BE1ADA83019312 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E437193B1BFD57C100AEC37A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43719461BFD57C200AEC37A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A69654317138F496F3AC430 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D8F3FDA17758DD4A024E74E /* Pods.debug.xcconfig */,
+				E92EB2691EA9A5F7A0F090C2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DCAC33208DB17236C55E6695 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3ECC9FCBFC11C5744C59E94A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E437191C1BFD57C100AEC37A = {
+			isa = PBXGroup;
+			children = (
+				E43719271BFD57C100AEC37A /* XJJRefresh */,
+				E43719411BFD57C100AEC37A /* XJJRefreshTests */,
+				E437194C1BFD57C200AEC37A /* XJJRefreshUITests */,
+				E43719261BFD57C100AEC37A /* Products */,
+				3A69654317138F496F3AC430 /* Pods */,
+				DCAC33208DB17236C55E6695 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E43719261BFD57C100AEC37A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E43719251BFD57C100AEC37A /* XJJRefresh.app */,
+				E437193E1BFD57C100AEC37A /* XJJRefreshTests.xctest */,
+				E43719491BFD57C200AEC37A /* XJJRefreshUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E43719271BFD57C100AEC37A /* XJJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				E43719701BFDAC9400AEC37A /* LJWZoomingHeader */,
+				E43719651BFD580800AEC37A /* XJJRefresh */,
+				E43719881BFDAD3200AEC37A /* TestZoomingHeaderView.h */,
+				E43719891BFDAD3200AEC37A /* TestZoomingHeaderView.m */,
+				E437192B1BFD57C100AEC37A /* AppDelegate.h */,
+				E437192C1BFD57C100AEC37A /* AppDelegate.m */,
+				E437192E1BFD57C100AEC37A /* ViewController.h */,
+				E437192F1BFD57C100AEC37A /* ViewController.m */,
+				E43719311BFD57C100AEC37A /* Main.storyboard */,
+				E43719341BFD57C100AEC37A /* Assets.xcassets */,
+				E43719361BFD57C100AEC37A /* LaunchScreen.storyboard */,
+				E43719391BFD57C100AEC37A /* Info.plist */,
+				E43719281BFD57C100AEC37A /* Supporting Files */,
+				E437196D1BFD730B00AEC37A /* TestRefresh.h */,
+				E437196E1BFD730B00AEC37A /* TestRefresh.m */,
+			);
+			path = XJJRefresh;
+			sourceTree = "<group>";
+		};
+		E43719281BFD57C100AEC37A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E43719291BFD57C100AEC37A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E43719411BFD57C100AEC37A /* XJJRefreshTests */ = {
+			isa = PBXGroup;
+			children = (
+				E43719421BFD57C100AEC37A /* XJJRefreshTests.m */,
+				E43719441BFD57C200AEC37A /* Info.plist */,
+			);
+			path = XJJRefreshTests;
+			sourceTree = "<group>";
+		};
+		E437194C1BFD57C200AEC37A /* XJJRefreshUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E437194D1BFD57C200AEC37A /* XJJRefreshUITests.m */,
+				E437194F1BFD57C200AEC37A /* Info.plist */,
+			);
+			path = XJJRefreshUITests;
+			sourceTree = "<group>";
+		};
+		E43719651BFD580800AEC37A /* XJJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				E4877F2E1BFEAF1A0052AFBB /* XJJHolyCrazyHeader.h */,
+				E4877F2F1BFEAF1A0052AFBB /* XJJHolyCrazyHeader.m */,
+				E43719661BFD581E00AEC37A /* XJJRefreshHeader.h */,
+				E43719671BFD58D000AEC37A /* XJJRefreshControl.h */,
+				E43719681BFD58D000AEC37A /* XJJRefreshControl.m */,
+				E437196A1BFD5BAB00AEC37A /* UIScrollView+XJJRefresh.h */,
+				E437196B1BFD5BAB00AEC37A /* UIScrollView+XJJRefresh.m */,
+			);
+			path = XJJRefresh;
+			sourceTree = "<group>";
+		};
+		E43719701BFDAC9400AEC37A /* LJWZoomingHeader */ = {
+			isa = PBXGroup;
+			children = (
+				E43719781BFDAC9400AEC37A /* LJWZoomingHeaderControl.h */,
+				E43719791BFDAC9400AEC37A /* LJWZoomingHeaderControl.m */,
+				E437197A1BFDAC9400AEC37A /* LJWZoomingHeaderDefine.h */,
+				E437197B1BFDAC9400AEC37A /* LJWZoomingHeaderDefine.m */,
+				E437197C1BFDAC9400AEC37A /* LJWZoomingHeaderViewProtocol.h */,
+				E437197D1BFDAC9400AEC37A /* UIScrollView+LJWZoomingHeader.h */,
+				E437197E1BFDAC9400AEC37A /* UIScrollView+LJWZoomingHeader.m */,
+				E437197F1BFDAC9400AEC37A /* UIView+BelongController.h */,
+				E43719801BFDAC9400AEC37A /* UIView+BelongController.m */,
+			);
+			path = LJWZoomingHeader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E43719241BFD57C100AEC37A /* XJJRefresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43719521BFD57C200AEC37A /* Build configuration list for PBXNativeTarget "XJJRefresh" */;
+			buildPhases = (
+				50921C016AD094229A350D41 /* Check Pods Manifest.lock */,
+				E43719211BFD57C100AEC37A /* Sources */,
+				E43719221BFD57C100AEC37A /* Frameworks */,
+				E43719231BFD57C100AEC37A /* Resources */,
+				F5EBE0D89919A73796BD9B85 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XJJRefresh;
+			productName = XJJRefresh;
+			productReference = E43719251BFD57C100AEC37A /* XJJRefresh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E437193D1BFD57C100AEC37A /* XJJRefreshTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43719551BFD57C200AEC37A /* Build configuration list for PBXNativeTarget "XJJRefreshTests" */;
+			buildPhases = (
+				E437193A1BFD57C100AEC37A /* Sources */,
+				E437193B1BFD57C100AEC37A /* Frameworks */,
+				E437193C1BFD57C100AEC37A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E43719401BFD57C100AEC37A /* PBXTargetDependency */,
+			);
+			name = XJJRefreshTests;
+			productName = XJJRefreshTests;
+			productReference = E437193E1BFD57C100AEC37A /* XJJRefreshTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E43719481BFD57C200AEC37A /* XJJRefreshUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43719581BFD57C200AEC37A /* Build configuration list for PBXNativeTarget "XJJRefreshUITests" */;
+			buildPhases = (
+				E43719451BFD57C200AEC37A /* Sources */,
+				E43719461BFD57C200AEC37A /* Frameworks */,
+				E43719471BFD57C200AEC37A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E437194B1BFD57C200AEC37A /* PBXTargetDependency */,
+			);
+			name = XJJRefreshUITests;
+			productName = XJJRefreshUITests;
+			productReference = E43719491BFD57C200AEC37A /* XJJRefreshUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E437191D1BFD57C100AEC37A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = ljw;
+				TargetAttributes = {
+					E43719241BFD57C100AEC37A = {
+						CreatedOnToolsVersion = 7.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					E437193D1BFD57C100AEC37A = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = E43719241BFD57C100AEC37A;
+					};
+					E43719481BFD57C200AEC37A = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = E43719241BFD57C100AEC37A;
+					};
+				};
+			};
+			buildConfigurationList = E43719201BFD57C100AEC37A /* Build configuration list for PBXProject "XJJRefresh" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E437191C1BFD57C100AEC37A;
+			productRefGroup = E43719261BFD57C100AEC37A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E43719241BFD57C100AEC37A /* XJJRefresh */,
+				E437193D1BFD57C100AEC37A /* XJJRefreshTests */,
+				E43719481BFD57C200AEC37A /* XJJRefreshUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E43719231BFD57C100AEC37A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43719381BFD57C100AEC37A /* LaunchScreen.storyboard in Resources */,
+				E43719351BFD57C100AEC37A /* Assets.xcassets in Resources */,
+				E43719331BFD57C100AEC37A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E437193C1BFD57C100AEC37A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43719471BFD57C200AEC37A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50921C016AD094229A350D41 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5EBE0D89919A73796BD9B85 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E43719211BFD57C100AEC37A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43719691BFD58D000AEC37A /* XJJRefreshControl.m in Sources */,
+				E43719871BFDAC9400AEC37A /* UIView+BelongController.m in Sources */,
+				E437198A1BFDAD3200AEC37A /* TestZoomingHeaderView.m in Sources */,
+				E437196C1BFD5BAB00AEC37A /* UIScrollView+XJJRefresh.m in Sources */,
+				E4877F301BFEAF1A0052AFBB /* XJJHolyCrazyHeader.m in Sources */,
+				E43719841BFDAC9400AEC37A /* LJWZoomingHeaderControl.m in Sources */,
+				E43719851BFDAC9400AEC37A /* LJWZoomingHeaderDefine.m in Sources */,
+				E43719301BFD57C100AEC37A /* ViewController.m in Sources */,
+				E437196F1BFD730B00AEC37A /* TestRefresh.m in Sources */,
+				E437192D1BFD57C100AEC37A /* AppDelegate.m in Sources */,
+				E43719861BFDAC9400AEC37A /* UIScrollView+LJWZoomingHeader.m in Sources */,
+				E437192A1BFD57C100AEC37A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E437193A1BFD57C100AEC37A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43719431BFD57C100AEC37A /* XJJRefreshTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43719451BFD57C200AEC37A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E437194E1BFD57C200AEC37A /* XJJRefreshUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E43719401BFD57C100AEC37A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E43719241BFD57C100AEC37A /* XJJRefresh */;
+			targetProxy = E437193F1BFD57C100AEC37A /* PBXContainerItemProxy */;
+		};
+		E437194B1BFD57C200AEC37A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E43719241BFD57C100AEC37A /* XJJRefresh */;
+			targetProxy = E437194A1BFD57C200AEC37A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E43719311BFD57C100AEC37A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43719321BFD57C100AEC37A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E43719361BFD57C100AEC37A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43719371BFD57C100AEC37A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E43719501BFD57C200AEC37A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E43719511BFD57C200AEC37A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E43719531BFD57C200AEC37A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D8F3FDA17758DD4A024E74E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XJJRefresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaodun.XJJRefresh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E43719541BFD57C200AEC37A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92EB2691EA9A5F7A0F090C2 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XJJRefresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaodun.XJJRefresh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E43719561BFD57C200AEC37A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XJJRefreshTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaodun.XJJRefreshTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XJJRefresh.app/XJJRefresh";
+			};
+			name = Debug;
+		};
+		E43719571BFD57C200AEC37A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XJJRefreshTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaodun.XJJRefreshTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XJJRefresh.app/XJJRefresh";
+			};
+			name = Release;
+		};
+		E43719591BFD57C200AEC37A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XJJRefreshUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaodun.XJJRefreshUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XJJRefresh;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E437195A1BFD57C200AEC37A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XJJRefreshUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaodun.XJJRefreshUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XJJRefresh;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E43719201BFD57C100AEC37A /* Build configuration list for PBXProject "XJJRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43719501BFD57C200AEC37A /* Debug */,
+				E43719511BFD57C200AEC37A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43719521BFD57C200AEC37A /* Build configuration list for PBXNativeTarget "XJJRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43719531BFD57C200AEC37A /* Debug */,
+				E43719541BFD57C200AEC37A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43719551BFD57C200AEC37A /* Build configuration list for PBXNativeTarget "XJJRefreshTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43719561BFD57C200AEC37A /* Debug */,
+				E43719571BFD57C200AEC37A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43719581BFD57C200AEC37A /* Build configuration list for PBXNativeTarget "XJJRefreshUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43719591BFD57C200AEC37A /* Debug */,
+				E437195A1BFD57C200AEC37A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E437191D1BFD57C100AEC37A /* Project object */;
+}
