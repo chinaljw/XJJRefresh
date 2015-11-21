@@ -17,14 +17,19 @@ typedef NS_ENUM(NSInteger, XJJHolyCrazyHeaderType)
 
 @interface XJJHolyCrazyHeader : UIView <XJJRefreshHeader>
 
+/** 刷新时调用的block */
 @property (nonatomic, copy) XJJRefreshBlock refreshBlock;
 
+/** 刷新的状态，建议不要手动修改 */
 @property (nonatomic, assign) XJJRefreshState refreshState;
 
+/** 起始位置，相对于scrollView顶部，不是scrollView的origin */
 @property (nonatomic, assign) CGPoint startPosition;
 
+/** 刷新时的位置，相对于scrollView顶部，不是scrollView的origin (横坐标x暂时没卵用) */
 @property (nonatomic, assign) CGPoint refreshingPosition;
 
+/** 刷新控件的类型 */
 @property (nonatomic, assign, readonly) XJJHolyCrazyHeaderType type;
 
 /** type为XJJHolyCrazyHeaderTypeCustom时将会使用此view */

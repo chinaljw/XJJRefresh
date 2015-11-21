@@ -15,6 +15,9 @@
 - (void)didOffsetChangedWithScrollViewScrollInfo:(UIScrollViewScrollInfo *)info
 {
     
+    //把控件放到最上面
+    [info.scrollingScrollView bringSubviewToFront:self.xjj_refreshHeader];
+    
     CGRect frame = info.scrollingScrollView.xjj_refreshHeader.frame;
     
     UIView<XJJRefreshHeader> *refresh = info.scrollingScrollView.xjj_refreshHeader;

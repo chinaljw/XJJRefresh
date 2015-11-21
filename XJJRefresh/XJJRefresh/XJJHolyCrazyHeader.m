@@ -53,6 +53,10 @@
     
     _customContentView = customContentView;
     
+    if (self.type == XJJHolyCrazyHeaderTypeDefault) {
+        return;
+    }
+    
     [self addSubview:customContentView];
     
 }
@@ -60,7 +64,7 @@
 - (UIActivityIndicatorView *)defaultRefreshView
 {
     if (!_defaultRefreshView) {
-        _defaultRefreshView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+        _defaultRefreshView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
         _defaultRefreshView.hidesWhenStopped = NO;
         _defaultRefreshView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     }
@@ -72,7 +76,7 @@
 {
     
     if (self.refreshState != XJJRefreshStateRefreshing) {
-        CGFloat angle = info.contentOffsetSection.y * 36 / 360 * M_2_PI;
+        CGFloat angle = info.contentOffsetSection.y * 5 / 360 * 2 * M_PI;
         angle = info.scrollDirection == UIScrollViewScrollDirectionToBottom ? - angle : angle;
         
         UIView *refreshView = nil;
