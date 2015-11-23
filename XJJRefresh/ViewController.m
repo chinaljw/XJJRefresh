@@ -47,7 +47,8 @@
     [self.scrollView add_xjj_refreshHeader:crazyRefresh refreshBlock:^{
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [weakSelf.scrollView end_xjj_refresh];
+//            [weakSelf.scrollView end_xjj_refresh];
+            [weakSelf.scrollView setRefreshState:XJJRefreshStateIdle];
         });
         
         [weakSelf.scrollView replace_xjj_refreshBlock:^{
@@ -60,14 +61,9 @@
     }];
     
     [self.scrollView begin_xjj_refresh];
-        
-}
-
-- (void)viewDidLayoutSubviews
-{
-    [super viewDidLayoutSubviews];
     
-   
+//    [self.scrollView setRefreshState:XJJRefreshStateRefreshing];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -68,7 +68,7 @@
         }
     }
     
-    [refresh didUpdateStateChangedWithState:refresh.refreshState scrollInfo:info];
+    [refresh didUpdateWithScrollInfo:info];
     
 }
 
