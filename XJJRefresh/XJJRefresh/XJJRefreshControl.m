@@ -49,7 +49,7 @@
     if (refresh.refreshState != XJJRefreshStateRefreshing && info.scrollingScrollView.isDragging) {
         
         //position是否小于刷新时的position
-        if (- info.newContentOffset.y - info.scrollingScrollView.contentInset.top < refresh.refreshingPosition.y + frame.size.height) {
+        if (- info.newContentOffset.y - info.scrollingScrollView.contentInset.top < refresh.refreshingPosition.y + -refresh.startPosition.y) {
             info.scrollingScrollView.xjj_refreshHeader.refreshState = XJJRefreshStatePulling;
         }
         else
