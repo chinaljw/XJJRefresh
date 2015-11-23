@@ -11,7 +11,7 @@
 #import "TestRefresh.h"
 #import "TestZoomingHeaderView.h"
 #import "UIScrollView+LJWZoomingHeader.h"
-#import "XJJHolyCrazyHeader.h"
+#import "XJJRefresh.h"
 
 @interface ViewController ()
 

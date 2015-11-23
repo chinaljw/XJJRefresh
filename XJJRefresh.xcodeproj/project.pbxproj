@@ -83,6 +83,7 @@
 		E43719891BFDAD3200AEC37A /* TestZoomingHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestZoomingHeaderView.m; sourceTree = "<group>"; };
 		E4877F2E1BFEAF1A0052AFBB /* XJJHolyCrazyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJJHolyCrazyHeader.h; sourceTree = "<group>"; };
 		E4877F2F1BFEAF1A0052AFBB /* XJJHolyCrazyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJJHolyCrazyHeader.m; sourceTree = "<group>"; };
+		E4CC1A7C1C02B92200E372D8 /* XJJRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XJJRefresh.h; sourceTree = "<group>"; };
 		E92EB2691EA9A5F7A0F090C2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,6 +210,7 @@
 				E43719681BFD58D000AEC37A /* XJJRefreshControl.m */,
 				E437196A1BFD5BAB00AEC37A /* UIScrollView+XJJRefresh.h */,
 				E437196B1BFD5BAB00AEC37A /* UIScrollView+XJJRefresh.m */,
+				E4CC1A7C1C02B92200E372D8 /* XJJRefresh.h */,
 			);
 			path = XJJRefresh;
 			sourceTree = "<group>";
