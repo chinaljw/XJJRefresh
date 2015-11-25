@@ -71,6 +71,11 @@
 {
     self.xjj_refreshHeader.refreshState = XJJRefreshStateIdle;
     
+    //如果结束时header位置超过刷新时的位置则不移动
+    if (- self.contentOffset.y -self.contentInset.top > -self.xjj_refreshHeader.startPosition.y) {
+        return;
+    }
+    
     [UIView animateWithDuration:0.4f delay:0.f options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         
         [self resetRefreshFrameToPosition:self.xjj_refreshHeader.startPosition];
