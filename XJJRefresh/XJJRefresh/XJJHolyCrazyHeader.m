@@ -36,6 +36,23 @@
     return self;
 }
 
+/** 通过indicator的类型，初始化一个默认的刷新控件 */
++ (instancetype)holyCrazyDeafaultHeaderWithIndicatorStyle:(UIActivityIndicatorViewStyle)style
+{
+    return [[self alloc] initWithIndicatorStyle:style];
+}
+
+- (instancetype)initWithIndicatorStyle:(UIActivityIndicatorViewStyle)style
+{
+    self = [self initWithType:XJJHolyCrazyHeaderTypeDefault size:CGSizeZero];
+    
+    if (self) {
+        self.defaultRefreshView.activityIndicatorViewStyle = style;
+    }
+    
+    return self;
+}
+
 #pragma mark - Setter & Getter
 - (void)setType:(XJJHolyCrazyHeaderType)type
 {

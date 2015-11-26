@@ -38,4 +38,7 @@ typedef NS_ENUM(NSInteger, XJJHolyCrazyHeaderType)
 /** 请用此方式初始化, 如果选择custom 请设置customContentView */
 + (instancetype)holyCrazyHeaderWithType:(XJJHolyCrazyHeaderType)type size:(CGSize)size;
 
+/** 通过indicator的类型，初始化一个默认的刷新控件 */
++ (instancetype)holyCrazyDeafaultHeaderWithIndicatorStyle:(UIActivityIndicatorViewStyle)style;
+
 @end
