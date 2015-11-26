@@ -33,15 +33,15 @@
     
     [self.scrollView addZoomingHeaderView:self.testHeaderView];
     
-    XJJHolyCrazyHeader *crazyRefresh = [XJJHolyCrazyHeader holyCrazyHeaderWithType:XJJHolyCrazyHeaderTypeCustom size:CGSizeMake(44.f, 44.f)];
+    UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 44.f, 44.f)];
+    customView.backgroundColor = [UIColor orangeColor];
+    
+    XJJHolyCrazyHeader *crazyRefresh = [XJJHolyCrazyHeader holyCrazyCustomHeaderWithCustomContentView:customView];
     
     crazyRefresh.startPosition = CGPointMake(0, -44.f);
     crazyRefresh.refreshingPosition = CGPointMake(0, 64.f);
     
-    UIView *customView = [[UIView alloc] initWithFrame:crazyRefresh.bounds];
-    customView.backgroundColor = [UIColor orangeColor];
     
-    crazyRefresh.customContentView = customView;
     
     __weak typeof(self) weakSelf = self;
     [self.scrollView add_xjj_refreshHeader:crazyRefresh refreshBlock:^{

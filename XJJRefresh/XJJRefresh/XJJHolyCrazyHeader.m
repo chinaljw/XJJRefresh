@@ -19,35 +19,39 @@
 
 @synthesize type = _type;
 
-/** 请用此方式初始化, 如果选择custom 请设置customContentView */
-+ (instancetype)holyCrazyHeaderWithType:(XJJHolyCrazyHeaderType)type size:(CGSize)size
+/** 初始化自定义header */
++ (instancetype)holyCrazyCustomHeaderWithCustomContentView:(UIView *)contentView
 {
-    return [[self alloc] initWithType:type size:size];
+    return [[self alloc] initWithCustomContentView:contentView];
 }
 
-- (instancetype)initWithType:(XJJHolyCrazyHeaderType)type size:(CGSize)size
+- (instancetype)initWithCustomContentView:(UIView *)contentView
 {
-    self = [self initWithFrame:CGRectMake(0, 0, size.width, size.height)];
+    self = [self initWithFrame:contentView.bounds];
     
     if (self) {
-        self.type = type;
+        self.type = XJJHolyCrazyHeaderTypeCustom;
+        self.customContentView = contentView;
+        self.customContentView.frame = self.customContentView.bounds;
     }
     
     return self;
 }
 
-/** 通过indicator的类型，初始化一个默认的刷新控件 */
-+ (instancetype)holyCrazyDeafaultHeaderWithIndicatorStyle:(UIActivityIndicatorViewStyle)style
+/** 初始化一个默认的header */
++ (instancetype)holyCrazyDeafaultHeaderWithIndicatorStyle:(UIActivityIndicatorViewStyle)style size:(CGSize)size
 {
-    return [[self alloc] initWithIndicatorStyle:style];
+    return [[self alloc] initWithIndicatorStyle:style size:size];
 }
 
-- (instancetype)initWithIndicatorStyle:(UIActivityIndicatorViewStyle)style
+- (instancetype)initWithIndicatorStyle:(UIActivityIndicatorViewStyle)style size:(CGSize)size
 {
-    self = [self initWithType:XJJHolyCrazyHeaderTypeDefault size:CGSizeZero];
+    self = [self initWithFrame:CGRectMake(0, 0, size.width, size.height)];
     
     if (self) {
+        self.type = XJJHolyCrazyHeaderTypeDefault;
         self.defaultRefreshView.activityIndicatorViewStyle = style;
+        self.defaultRefreshView.center = CGPointMake(size.width / 2, size.height / 2);
     }
     
     return self;

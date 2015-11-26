@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XJJRefresh"
-  s.version      = "1.0.0"
+  s.version      = "1.0.2"
   s.summary      = "一个长得和朋友圈的刷新控件有几分相似的刷新控件"
 
   s.description  = "一个长得和朋友圈的刷新控件有几分相似的刷新控件哟~"
@@ -72,7 +72,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/chinaljw/XJJRefresh.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/chinaljw/XJJRefresh.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

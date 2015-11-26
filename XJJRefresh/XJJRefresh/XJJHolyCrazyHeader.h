@@ -35,10 +35,10 @@ typedef NS_ENUM(NSInteger, XJJHolyCrazyHeaderType)
 /** type为XJJHolyCrazyHeaderTypeCustom时将会使用此view */
 @property (nonatomic, strong) UIView *customContentView;
 
-/** 请用此方式初始化, 如果选择custom 请设置customContentView */
-+ (instancetype)holyCrazyHeaderWithType:(XJJHolyCrazyHeaderType)type size:(CGSize)size;
+/** 初始化自定义header */
++ (instancetype)holyCrazyCustomHeaderWithCustomContentView:(UIView *)contentView;
 
-/** 通过indicator的类型，初始化一个默认的刷新控件 */
-+ (instancetype)holyCrazyDeafaultHeaderWithIndicatorStyle:(UIActivityIndicatorViewStyle)style;
+/** 初始化一个默认的header */
++ (instancetype)holyCrazyDeafaultHeaderWithIndicatorStyle:(UIActivityIndicatorViewStyle)style size:(CGSize)size;
 
 @end

@@ -71,10 +71,11 @@
 {
     self.xjj_refreshHeader.refreshState = XJJRefreshStateIdle;
     
+    //暂时不处理了
     //如果结束时header位置超过刷新时的位置则不移动
-    if (- self.contentOffset.y -self.contentInset.top > -self.xjj_refreshHeader.startPosition.y && self.isDragging) {
-        return;
-    }
+//    if (- self.contentOffset.y -self.contentInset.top > -self.xjj_refreshHeader.startPosition.y && self.isDragging) {
+//        return;
+//    }
     
     [UIView animateWithDuration:0.4f delay:0.f options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         
