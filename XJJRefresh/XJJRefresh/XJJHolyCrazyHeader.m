@@ -71,8 +71,35 @@
     return _defaultRefreshView;
 }
 
+- (void)setRefreshState:(XJJRefreshState)refreshState
+{
+    
+    if (_refreshState == refreshState) {
+        return;
+    }
+    
+    _refreshState = refreshState;
+    
+    switch (_refreshState) {
+        case XJJRefreshStateIdle:
+        {
+            [self stopRefreshAnimating];
+        }
+            break;
+        case XJJRefreshStateRefreshing:
+        {
+            [self startRefreshAnimating];
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+}
+
 #pragma mark - XJJRefreshHeader
-- (void)didUpdateStateChangedWithState:(XJJRefreshState)state scrollInfo:(UIScrollViewScrollInfo *)info
+- (void)didUpdateWithScrollInfo:(UIScrollViewScrollInfo *)info
 {
     
     if (self.refreshState != XJJRefreshStateRefreshing) {
@@ -99,22 +126,7 @@
         refreshView.transform = CGAffineTransformRotate(refreshView.transform, angle);
         
     }
-    
-    switch (self.refreshState) {
-        case XJJRefreshStateIdle:
-        {
-            [self stopRefreshAnimating];
-        }
-            break;
-        case XJJRefreshStateRefreshing:
-        {
-            [self startRefreshAnimating];
-        }
-            break;
-            
-        default:
-            break;
-    }
+
 }
 
 - (void)startRefreshAnimating

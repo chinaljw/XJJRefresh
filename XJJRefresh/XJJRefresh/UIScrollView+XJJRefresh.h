@@ -23,4 +23,7 @@
 
 - (void)replace_xjj_refreshBlock:(XJJRefreshBlock)refreshBlock;
 
+/** 设置刷新的状态，闲置和刷新中 (仅仅改变状态，并不会调用刷新block)*/
+- (void)setRefreshState:(XJJRefreshState)state;
+
 @end

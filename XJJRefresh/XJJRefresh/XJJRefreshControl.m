@@ -24,7 +24,7 @@
     
     //没在刷新 且 超过refreshingPosition
 //    NSLog(@"%lf", info.scrollingScrollView.contentInset.top);
-    if (refresh.refreshState != XJJRefreshStateRefreshing && (- info.scrollingScrollView.contentOffset.y - info.scrollingScrollView.contentInset.top >= refresh.refreshingPosition.y + frame.size.height)) {
+    if (refresh.refreshState != XJJRefreshStateRefreshing && (- info.newContentOffset.y - info.scrollingScrollView.contentInset.top >= refresh.refreshingPosition.y + -refresh.startPosition.y)) {
         
         //固定住position
         frame.origin.y = info.scrollingScrollView.contentOffset.y + refresh.refreshingPosition.y;
@@ -34,7 +34,7 @@
     }
     
     //在刷新 且 超过刷新的position
-    if (refresh.refreshState == XJJRefreshStateRefreshing &&  info.scrollingScrollView.contentOffset.y <= - info.scrollingScrollView.contentInset.top) {
+    if (refresh.refreshState == XJJRefreshStateRefreshing &&  info.newContentOffset.y <= - info.scrollingScrollView.contentInset.top) {
         
         //固定住position
         frame.origin.y = info.scrollingScrollView.contentOffset.y + refresh.refreshingPosition.y;
@@ -49,7 +49,7 @@
     if (refresh.refreshState != XJJRefreshStateRefreshing && info.scrollingScrollView.isDragging) {
         
         //position是否小于刷新时的position
-        if (- info.scrollingScrollView.contentOffset.y - info.scrollingScrollView.contentInset.top < refresh.refreshingPosition.y + frame.size.height) {
+        if (- info.newContentOffset.y - info.scrollingScrollView.contentInset.top < refresh.refreshingPosition.y + -refresh.startPosition.y) {
             info.scrollingScrollView.xjj_refreshHeader.refreshState = XJJRefreshStatePulling;
         }
         else
@@ -68,7 +68,7 @@
         }
     }
     
-    [refresh didUpdateStateChangedWithState:refresh.refreshState scrollInfo:info];
+    [refresh didUpdateWithScrollInfo:info];
     
 }
 

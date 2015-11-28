@@ -34,6 +34,6 @@ typedef NS_ENUM(NSInteger, XJJRefreshState)
 - (CGPoint)refreshingPosition;
 
 @optional;
-- (void)didUpdateStateChangedWithState:(XJJRefreshState)state scrollInfo:(UIScrollViewScrollInfo *)info;
+- (void)didUpdateWithScrollInfo:(UIScrollViewScrollInfo *)info;
 
 @end

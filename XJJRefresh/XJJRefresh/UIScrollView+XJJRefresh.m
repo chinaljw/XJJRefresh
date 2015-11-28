@@ -71,7 +71,10 @@
 {
     self.xjj_refreshHeader.refreshState = XJJRefreshStateIdle;
     
-    [self.xjj_refreshHeader didUpdateStateChangedWithState:XJJRefreshStateIdle scrollInfo:nil];
+    //如果结束时header位置超过刷新时的位置则不移动
+    if (- self.contentOffset.y -self.contentInset.top > -self.xjj_refreshHeader.startPosition.y) {
+        return;
+    }
     
     [UIView animateWithDuration:0.4f delay:0.f options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         
@@ -85,8 +88,6 @@
 - (void)begin_xjj_refresh
 {
     self.xjj_refreshHeader.refreshState = XJJRefreshStateRefreshing;
-    
-    [self.xjj_refreshHeader didUpdateStateChangedWithState:XJJRefreshStateIdle scrollInfo:nil];
     
     if (self.xjj_refreshHeader.refreshBlock) {
         self.xjj_refreshHeader.refreshBlock();
@@ -104,6 +105,28 @@
 - (void)replace_xjj_refreshBlock:(XJJRefreshBlock)refreshBlock
 {
     self.xjj_refreshHeader.refreshBlock = refreshBlock;
+}
+
+/** 设置刷新的状态，闲置和刷新中 (仅仅改变状态，并不会调用刷新block)*/
+- (void)setRefreshState:(XJJRefreshState)state
+{
+    switch (state) {
+        case XJJRefreshStateIdle:
+        {
+            self.xjj_refreshHeader.refreshState = state;
+            [self resetRefreshFrameToPosition:self.xjj_refreshHeader.startPosition];
+        }
+            break;
+        case XJJRefreshStateRefreshing:
+        {
+            self.xjj_refreshHeader.refreshState = state;
+            [self resetRefreshFrameToPosition:self.xjj_refreshHeader.refreshingPosition];
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 #pragma mark - Helper

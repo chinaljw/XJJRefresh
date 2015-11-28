@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, XJJHolyCrazyHeaderType)
 /** 起始位置，相对于scrollView顶部，不是scrollView的origin */
 @property (nonatomic, assign) CGPoint startPosition;
 
-/** 刷新时的位置，相对于scrollView顶部，不是scrollView的origin (横坐标x暂时没卵用) */
+/** 刷新时的位置，相对于scrollView顶部，不是scrollView的origin (横坐标x暂时没卵用,请设置成和startPosition.x一样) */
 @property (nonatomic, assign) CGPoint refreshingPosition;
 
 /** 刷新控件的类型 */
