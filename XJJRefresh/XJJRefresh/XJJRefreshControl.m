@@ -22,29 +22,6 @@
     
     UIView<XJJRefreshHeader> *refresh = info.scrollingScrollView.xjj_refreshHeader;
     
-    //没在刷新 且 超过refreshingPosition
-//    NSLog(@"%lf", info.scrollingScrollView.contentInset.top);
-    if (refresh.refreshState != XJJRefreshStateRefreshing && (- info.newContentOffset.y - info.scrollingScrollView.contentInset.top >= refresh.refreshingPosition.y + -refresh.startPosition.y)) {
-        
-        //固定住position
-        frame.origin.y = info.scrollingScrollView.contentOffset.y + refresh.refreshingPosition.y;
-        
-        refresh.frame = frame;
-        
-    }
-    
-    //在刷新 且 超过刷新的position
-    if (refresh.refreshState == XJJRefreshStateRefreshing &&  info.newContentOffset.y <= - info.scrollingScrollView.contentInset.top) {
-        
-        //固定住position
-        frame.origin.y = info.scrollingScrollView.contentOffset.y + refresh.refreshingPosition.y;
-        
-        refresh.frame = frame;
-        
-        return;
-    
-    }
-    
     //是否不在刷新且正在拖拽
     if (refresh.refreshState != XJJRefreshStateRefreshing && info.scrollingScrollView.isDragging) {
         
@@ -66,6 +43,29 @@
         if (refresh.refreshBlock) {
             refresh.refreshBlock();
         }
+    }
+    
+    //没在刷新 且 超过refreshingPosition
+//    NSLog(@"%lf", info.scrollingScrollView.contentInset.top);
+    if (refresh.refreshState != XJJRefreshStateRefreshing && (- info.newContentOffset.y - info.scrollingScrollView.contentInset.top >= refresh.refreshingPosition.y + -refresh.startPosition.y)) {
+        
+        //固定住position
+        frame.origin.y = info.scrollingScrollView.contentOffset.y + refresh.refreshingPosition.y;
+        
+        refresh.frame = frame;
+        
+    }
+    
+    //在刷新 且 超过刷新的position
+    if (refresh.refreshState == XJJRefreshStateRefreshing &&  info.newContentOffset.y <= - info.scrollingScrollView.contentInset.top) {
+        
+        //固定住position
+        frame.origin.y = info.scrollingScrollView.contentOffset.y + refresh.refreshingPosition.y;
+        
+        refresh.frame = frame;
+        
+        return;
+    
     }
     
     [refresh didUpdateWithScrollInfo:info];
