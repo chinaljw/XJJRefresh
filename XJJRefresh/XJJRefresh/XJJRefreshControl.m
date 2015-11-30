@@ -10,6 +10,10 @@
 #import "XJJRefreshControl.h"
 #import "UIScrollView+XJJRefresh.h"
 
+/*
+ ma dan 写得乱七八糟的!!!!!!!!!
+ */
+
 @implementation XJJRefreshControl
 
 - (void)didOffsetChangedWithScrollViewScrollInfo:(UIScrollViewScrollInfo *)info
@@ -17,6 +21,13 @@
     
     //把控件放到最上面
     [info.scrollingScrollView bringSubviewToFront:self.xjj_refreshHeader];
+    
+    //如果不在刷新，且刷新控件不在可视范围内
+    if (self.xjj_refreshHeader.refreshState != XJJRefreshStateRefreshing && info.newContentOffset.y > -info.scrollingScrollView.contentInset.top) {
+        self.xjj_refreshHeader.refreshState = XJJRefreshStateIdle;
+        [self.xjj_refreshHeader didUpdateWithScrollInfo:info];
+        return;
+    }
     
     CGRect frame = info.scrollingScrollView.xjj_refreshHeader.frame;
     
