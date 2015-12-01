@@ -23,7 +23,7 @@
     [info.scrollingScrollView bringSubviewToFront:self.xjj_refreshHeader];
     
     //如果不在刷新，且刷新控件不在可视范围内
-    if (self.xjj_refreshHeader.refreshState != XJJRefreshStateRefreshing && info.newContentOffset.y > -info.scrollingScrollView.contentInset.top) {
+    if (self.xjj_refreshHeader.refreshState != XJJRefreshStateRefreshing && info.newContentOffset.y >= -info.scrollingScrollView.contentInset.top) {
         self.xjj_refreshHeader.refreshState = XJJRefreshStateIdle;
         [self.xjj_refreshHeader didUpdateWithScrollInfo:info];
         return;
