@@ -69,6 +69,11 @@
 
 - (void)end_xjj_refresh
 {
+    
+    if (self.xjj_refreshHeader.refreshState == XJJRefreshStateIdle) {
+        return;
+    }
+    
     self.xjj_refreshHeader.refreshState = XJJRefreshStateIdle;
     
     //暂时不处理了
@@ -88,6 +93,11 @@
 
 - (void)begin_xjj_refresh
 {
+    
+    if (self.xjj_refreshHeader.refreshState == XJJRefreshStateRefreshing) {
+        return;
+    }
+    
     self.xjj_refreshHeader.refreshState = XJJRefreshStateRefreshing;
     
     if (self.xjj_refreshHeader.refreshBlock) {
